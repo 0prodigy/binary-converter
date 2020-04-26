@@ -2,7 +2,13 @@ let arr = [];
 function converter(num) {
   //   let arr = [];
   if (num <= 2) {
-    arr.unshift(1, 0);
+    if (num == 0) {
+      arr.unshift(0);
+    } else if (num == 1) {
+      arr.unshift(1);
+    } else if (num == 2) {
+      arr.unshift(1, 0);
+    }
     return;
   }
   let remainder = num % 2;
